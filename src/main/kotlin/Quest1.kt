@@ -9,12 +9,12 @@ fun main(args :Array<String>) {
 	var arr: Array<Array<String>> = arrayOf(arrayOf<String>("crow_mask", "face"))
 	arr += arrayOf(arrayOf<String>("blue_sunglasses", "face"))
 	arr += arrayOf(arrayOf<String>("smoky_makeup", "face"))
-	val solution = Solution()
+	val solution = Quest1()
 	val sum = solution.solution(arr)
 	println("$sum")
 }
 
-class Solution {
+class Quest1 {
 	fun solution(clothes: Array<Array<String>>): Int {
 		var answer = 1
 		val items: HashMap<String, Int?> = HashMap()
