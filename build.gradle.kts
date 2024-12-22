@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.4.31"
+    kotlin("jvm") version "1.9.25"
 }
 
 group = "me.sungmingyu"
@@ -12,10 +12,8 @@ sourceSets.main {
     java.srcDirs("src/main/java", "src/main/kotlin")
 }
 
-tasks {
-    compileKotlin {
-        kotlinOptions {
-            jvmTarget = "11"
-        }
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
